@@ -98,7 +98,7 @@ header, main {
     flex-direction: row;
     align-items: flex-start;
     gap: 40px;
-    background: #ffffff;
+    background: #fafafa;
     padding: 40px;
     margin-top: 20px;
 }
@@ -154,7 +154,7 @@ header, main {
     flex-direction: row;
     align-items: flex-start;
     gap: 25px;
-    background: #ffffff;
+    background: #fafafa;
     padding: 25px;
     margin-top: 30px;
 }
