@@ -10,6 +10,11 @@ body {
     color: #333;
 }
 
+p {
+    text-align: justify;
+    hyphens: auto;
+}
+
 /* Fuente header1 */
 h1 {
     font-family: 'Montserrat', sans-serif;
