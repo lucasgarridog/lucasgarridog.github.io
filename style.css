@@ -92,7 +92,6 @@ header, main {
 }
 
 /* Homepage */
-
 .perfil-home {
     padding: 20px;
 }
@@ -105,6 +104,7 @@ header, main {
 .foto-wrap {
     width: 180px;
     height: 186px;
+    object-fit: cover; /* Asegura que la foto no se achate */
     box-shadow: 0 4px 10px rgba(0,0,0,0.08);
     float: left; 
     margin-right: 30px;
@@ -114,7 +114,7 @@ header, main {
 .redes-sociales {
     clear: both;
     display: flex;
-    justify-content: center;
+    justify-content: flex-start; /* En PC queda más profesional alineado a la izquierda */
     gap: 15px;
     margin-top: 30px;
     flex-wrap: wrap;
@@ -136,18 +136,23 @@ header, main {
     transform: translateY(-3px);
 }
 
-/* Tarjetas noticias */
+/* Tarjetas noticias (ESTRUCTURA DIRECTA PARA PC) */
 .noticia-tarjeta {
     display: flex;
-    flex-direction: column;
+    flex-direction: row; /* Fila directamente, sin medias tintas */
+    align-items: flex-start;
     gap: 25px;
     background: #ffffff;
-    padding: 20px;
+    padding: 25px;
     margin-top: 30px;
+    border-radius: 12px; /* Añadida la curva para que sea una tarjeta */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05); /* Sombra añadida */
 }
 
 .noticia-imagen {
-    width: 100%;
+    flex: 1.2;
+    max-width: 450px;
+    margin: 0;
 }
 
 .noticia-imagen img {
@@ -155,10 +160,12 @@ header, main {
     max-width: 100%;
     height: auto;
     display: block;
+    border-radius: 8px; /* Bordes redondeados en la foto */
 }
 
 .noticia-contenido {
-    padding: 30px;
+    flex: 1.5;
+    padding: 0;
     text-align: left;
 }
 
@@ -176,24 +183,4 @@ header, main {
     font-weight: 400;
     margin-top: 2px;
     margin-bottom: 20px;
-}
-
-@media (min-width: 600px) {
-    .noticia-tarjeta {
-        flex-direction: row;
-        align-items: flex-start;
-    }
-    
-    .noticia-imagen {
-        flex: 1.2;
-        max-width: 450px;
-        margin: 0; 
-        padding-top: 0;
-    }
-    
-    .noticia-contenido {
-        flex: 1.5;
-        padding-top: 0; 
-        padding-bottom: 0;
-    }
 }
