@@ -50,6 +50,17 @@ body {
     margin-left: 5px;
 }
 
+.icono-bandera {
+    height: 18px;
+    width: auto;
+    vertical-align: middle;
+    transition: transform 0.2s ease; /* Prepara un efecto chulo de movimiento */
+}
+
+.icono-bandera:hover {
+    transform: scale(1.2); 
+}
+
 header, main {
     max-width: 800px;
     margin: 40px auto;
