@@ -106,9 +106,8 @@ header, main {
 }
 
 .foto-wrap {
-    width: 200px;
-    height: 200px;
-    object-fit: cover;
+    width: 180px;
+    height: 186px;
     box-shadow: 0 4px 10px rgba(0,0,0,0.08);
     float: left; 
     margin-right: 30px;
