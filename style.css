@@ -52,7 +52,7 @@ body {
 
 .icono-bandera {
     height: 18px;
-    width: auto;
+    width: 26.666px;
     vertical-align: middle;
     transition: transform 0.2s ease; /* Prepara un efecto chulo de movimiento */
 }
