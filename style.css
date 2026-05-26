@@ -104,8 +104,6 @@ header, main {
 .foto-wrap {
     width: 180px;
     height: 186px;
-    object-fit: cover; /* Asegura que la foto no se achate */
-    box-shadow: 0 4px 10px rgba(0,0,0,0.08);
     float: left; 
     margin-right: 30px;
     margin-bottom: 15px;
@@ -114,7 +112,7 @@ header, main {
 .redes-sociales {
     clear: both;
     display: flex;
-    justify-content: flex-start; /* En PC queda más profesional alineado a la izquierda */
+    justify-content: flex-start;
     gap: 15px;
     margin-top: 30px;
     flex-wrap: wrap;
@@ -136,17 +134,15 @@ header, main {
     transform: translateY(-3px);
 }
 
-/* Tarjetas noticias (ESTRUCTURA DIRECTA PARA PC) */
+/* Tarjetas noticias */
 .noticia-tarjeta {
     display: flex;
-    flex-direction: row; /* Fila directamente, sin medias tintas */
+    flex-direction: row;
     align-items: flex-start;
     gap: 25px;
     background: #ffffff;
     padding: 25px;
     margin-top: 30px;
-    border-radius: 12px; /* Añadida la curva para que sea una tarjeta */
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05); /* Sombra añadida */
 }
 
 .noticia-imagen {
@@ -160,7 +156,6 @@ header, main {
     max-width: 100%;
     height: auto;
     display: block;
-    border-radius: 8px; /* Bordes redondeados en la foto */
 }
 
 .noticia-contenido {
