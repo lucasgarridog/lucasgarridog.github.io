@@ -11,13 +11,21 @@
 <body>
     {% include menu.html %}
     <main>
-        <h1>Noticias recientes</h1>
         
-        <article class="noticia">
-            <h2>Defensa de tesis doctoral</h2>
-            <p><em>08/04/2026</em></p>
-            <p>NOTICIA</p>
-        </article>
+        <h1>Noticias recientes</h1>
+
+        <article class="noticia-tarjeta">
+        <div class="noticia-imagen">
+            <img src="/img/defensa-tesis.jpeg" alt="Defensa de Tesis Doctoral">
+        </div>
+        <div class="noticia-contenido">
+            <span class="noticia-fecha">08/04/2026</span>
+            <h2>Defensa de Tesis Doctoral</h2>
+            <p class="noticia-destacado"> Es un orgullo compartir que he defendido con éxito mi tesis doctoral titulada <strong>"New insights into reactions induced by cluster-structured nuclei: the special cases of 12,13C"</strong>.</p>
+            <p> El tribunal me otorgó la máxima calificación de <strong> Sobresaliente Cum Laude</strong>.Además, la tesis ha sido reconocida con la <strong>Mención Internacional</strong> y la <strong>Mención Industrial</strong>. Agradezco profundamente a mis directores, al tribunal, y a todos los que me han acompañado durante estos años. ¡A por el próximo reto!</p>
+        </div>
+    </article>
+        
     </main>
 </body>
 </html>
