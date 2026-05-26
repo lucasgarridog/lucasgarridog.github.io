@@ -92,22 +92,7 @@ header, main {
 }
 
 /* Homepage */
-.perfil-home {
-    padding: 20px;
-}
 
-.bio {
-    margin-top: 25px;
-    overflow: hidden;
-}
-
-.foto-wrap {
-    width: 180px;
-    height: 186px;
-    float: left; 
-    margin-right: 30px;
-    margin-bottom: 15px;
-}
 
 .redes-sociales {
     clear: both;
