@@ -14,14 +14,14 @@ body {
 h1 {
     font-family: 'Montserrat', sans-serif;
     font-weight: 700;
-    color: #2c3e50; /* Opcional: un tono azul oscuro/grisáceo le queda genial a Montserrat */
+    color: #2c3e50;
     margin-bottom: 10px;
 }
 
 /* Fuente header2 */
 h2 {
     font-weight: 600;
-    color: #444; /* Un tono un pelín más claro que el texto normal */
+    color: #444;
     margin-top: 30px;
 }
 
