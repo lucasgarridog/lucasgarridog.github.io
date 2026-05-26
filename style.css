@@ -54,7 +54,6 @@ body {
     height: 18px;
     width: 26.666px;
     vertical-align: middle;
-    transition: transform 0.2s ease; /* Prepara un efecto chulo de movimiento */
 }
 
 .icono-bandera:hover {
