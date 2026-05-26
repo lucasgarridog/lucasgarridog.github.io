@@ -139,11 +139,19 @@ header, main {
 @media (min-width: 600px) {
     .noticia-tarjeta {
         flex-direction: row;
-        align-items: center;
+        align-items: flex-start;
     }
+    
     .noticia-imagen {
-        max-width: 600px;
-        margin: 0 auto;
-        padding-top: 20px;
+        flex: 1.2;
+        max-width: 450px;
+        margin: 0; 
+        padding-top: 0;
+    }
+    
+    .noticia-contenido {
+        flex: 1.5;
+        padding-top: 0; 
+        padding-bottom: 0;
     }
 }
