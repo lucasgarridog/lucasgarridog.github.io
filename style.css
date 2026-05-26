@@ -93,7 +93,36 @@ header, main {
 
 /* Homepage */
 
+.home-tarjeta {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 40px;
+    background: #ffffff;
+    padding: 40px;
+    margin-top: 20px;
+}
 
+.bio-imagen {
+    flex: 0 0 180px;
+}
+
+.bio-imagen img {
+    width: 180px;
+    height: 186px;
+    display: block;
+}
+
+.bio-texto {
+    flex: 1;
+}
+
+.bio-texto h2 {
+    font-size: 1.4rem;
+    color: #3498db;
+    margin-top: 0;
+    margin-bottom: 20px;
+}
 .redes-sociales {
     clear: both;
     display: flex;
