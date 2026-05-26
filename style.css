@@ -89,17 +89,6 @@ header, main {
 }
 
 /* Tarjetas noticias */
-@media (min-width: 600px) {
-    .noticia-tarjeta {
-        flex-direction: row;
-        align-items: center;
-    }
-    .noticia-imagen {
-        flex: 1;
-        max-width: 250px;
-    }
-}
-
 .noticia-tarjeta {
     display: flex;
     flex-direction: column;
@@ -132,4 +121,15 @@ header, main {
     color: #7f8c8d;
     text-transform: uppercase;
     font-weight: 600;
+}
+
+@media (min-width: 600px) {
+    .noticia-tarjeta {
+        flex-direction: row;
+        align-items: center;
+    }
+    .noticia-imagen {
+        flex: 1;
+        max-width: 250px;
+    }
 }
