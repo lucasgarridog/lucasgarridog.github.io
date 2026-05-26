@@ -4,16 +4,35 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Lucas Garrido Gómez</title>
-    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="/style.css">
 </head>
     
 <body>
-    {% include menu_en.html %}
-    <header>
-        <h1>TEST TEST TEST</h1>
-        <p>This is a test. Website under construction.</p>
-    </header>
+    {% include menu_en.html %}    
+    <main>
+    
+    <h1>About me</h1>
+    
+    <div class="home-tarjeta">
+        
+        <div class="bio-imagen">
+            <img src="/img/foto-perfil.jpeg" alt="Lucas Garrido Gómez">
+        </div>
+        
+        <div class="bio-texto">
+            <p>I have a PhD in Physics from the University of Seville, specializing in reactions induced by cluster-structured nuclei</p>
+            
+            <div class="redes-sociales">
+                <a href="mailto:lgarrido2@us.es" class="btn-red">Email</a>
+                <a href="https://orcid.org/0000-0002-7553-490X" target="_blank" class="btn-red">ORCiD</a>
+                <a href="https://scholar.google.com/citations?user=H36KZbwAAAAJ&hl=es" target="_blank" class="btn-red">Scholar</a>
+            </div>
+        </div>
+        
+    </div>
+    
+</main>
+    
 </body>
 </html>
