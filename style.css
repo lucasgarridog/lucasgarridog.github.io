@@ -31,12 +31,12 @@ body {
     color: white;
     text-decoration: none;
     margin-left: 20px;
-    font-weight: bold;
+    font-weight: 400;
     transition: color 0.3s;
 }
 
 .links a:hover {
-    color: #3498db;
+    color: #c2c2c2;
 }
 
 .languages {
