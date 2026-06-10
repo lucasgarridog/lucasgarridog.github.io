@@ -206,26 +206,6 @@ header, main {
     border-color: #4285f4;
 }
 
-/* Botones estilo "Ghost" */
-.btn-red {
-    background-color: transparent;
-    color: #000000 !important;
-    padding: 8px 16px;
-    text-decoration: none;
-    border: 1px solid #000000;
-    border-radius: 0;
-    font-weight: 400;
-    font-size: 0.8rem;
-    text-transform: uppercase;
-    letter-spacing: 0.5px;
-    transition: all 0.3s;
-}
-
-.btn-red:hover {
-    background-color: #000000;
-    color: #ffffff !important;
-}
-
 /* Tarjetas noticias (Ahora son bloques editoriales) */
 .noticia-tarjeta {
     display: flex;
