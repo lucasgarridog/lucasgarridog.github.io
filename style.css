@@ -256,3 +256,118 @@ header, main {
     text-transform: uppercase;
     letter-spacing: 1px;
 }
+
+/* --- SECCIÓN CURRICULUM VITAE (Estilo Minimalista Suizo) --- */
+
+.cv-container {
+    margin-top: 50px;
+}
+
+/* Metadata de la cabecera del CV */
+.cv-header {
+    margin-bottom: 50px;
+    border-bottom: 1px solid #000000; /* Línea negra sólida que ancla el documento */
+    padding-bottom: 25px;
+}
+
+.cv-meta-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Dos columnas limpias de texto */
+    gap: 10px 40px;
+    margin-top: 20px;
+    font-size: 0.9rem;
+    font-weight: 300;
+}
+
+/* Bloques de fila asimétricos (Fechas izquierda, datos derecha) */
+.cv-bloque {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 50px;
+    padding: 25px 0;
+    border-bottom: 1px solid #eaeaea; /* Línea de separación ultra fina */
+}
+
+.cv-col-izq {
+    flex: 0 0 140px; /* Ancho fijo para las fechas */
+    font-size: 0.85rem;
+    color: #666666;
+    font-weight: 400;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.cv-col-der {
+    flex: 1;
+}
+
+/* Tipografía de los cargos */
+.cv-col-der h3 {
+    margin: 0 0 4px 0;
+    font-size: 1.15rem;
+    font-weight: 600;
+    color: #000000;
+    letter-spacing: -0.3px;
+}
+
+.cv-col-der h4 {
+    margin: 0 0 10px 0;
+    font-size: 0.95rem;
+    font-weight: 400;
+    color: #666666;
+}
+
+.cv-distincion {
+    margin: 0 0 8px 0;
+    font-size: 0.85rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: #c6914b; /* Reutilizamos tu ocre/dorado académico para las distinciones importantes */
+    font-weight: 600;
+}
+
+.cv-descripcion {
+    margin: 0;
+    font-size: 0.95rem;
+    color: #222222;
+}
+
+.cv-sub-info {
+    margin: 0 0 10px 0;
+    font-size: 0.95rem;
+    font-weight: 400;
+    color: #444444;
+}
+
+/* Listas de tareas y competencias */
+.cv-lista-tareas {
+    margin: 0;
+    padding-left: 20px;
+    font-size: 0.95rem;
+    color: #333333;
+}
+
+.cv-lista-tareas li {
+    margin-bottom: 5px;
+}
+
+.cv-competencias p {
+    margin-top: 0;
+    margin-bottom: 12px;
+    font-size: 0.95rem;
+}
+
+/* Lista de publicaciones estilo Índice Bibliográfico */
+.cv-lista-publicaciones {
+    margin: 0;
+    padding-left: 20px;
+    font-size: 0.9rem;
+    color: #1a1a1a;
+}
+
+.cv-lista-publicaciones li {
+    margin-bottom: 15px;
+    text-align: justify;
+    font-weight: 300;
+}
