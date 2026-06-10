@@ -126,13 +126,6 @@ header, main {
     height: auto;
     display: block;
     border-radius: 0; /* Esquinas 100% afiladas */
-    /* Truco opcional para el Home: filtro blanco y negro que se quita al pasar el ratón */
-    filter: grayscale(100%); 
-    transition: filter 0.4s;
-}
-
-.bio-imagen img:hover {
-    filter: grayscale(0%);
 }
 
 .bio-texto {
