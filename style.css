@@ -202,8 +202,8 @@ header, main {
 }
 
 .link-scholar:hover {
-    color: #4285f4; /* El azul académico de Google */
-    border-color: #4285f4;
+    color: #c6914b; /* Dorado académico / Ocre suave */
+    border-color: #c6914b;
 }
 
 /* Tarjetas noticias (Ahora son bloques editoriales) */
