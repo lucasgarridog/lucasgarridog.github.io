@@ -106,46 +106,104 @@ header, main {
     vertical-align: middle;
 }
 
-/* Homepage */
+/* Homepage (Evolución Minimalista y Editorial) */
+
+.perfil-home {
+    padding: 0;
+    margin-top: 50px;
+}
+
+/* Reducimos el tamaño del título principal y su separación */
+.home-cabecera {
+    margin-bottom: 30px;
+}
+
+.home-cabecera h1 {
+    font-size: 1.8rem; /* Más pequeño, estilo revista de diseño */
+    margin-bottom: 2px;
+}
+
+.subtitulo-academico {
+    font-size: 0.9rem;
+    color: #666666;
+    margin-top: 0;
+    font-weight: 400;
+    letter-spacing: 0.5px;
+}
+
+/* Estructura de la biografía */
 .home-tarjeta {
     display: flex;
     flex-direction: row;
     align-items: flex-start;
-    gap: 60px; /* Mucho aire entre foto y texto */
+    gap: 50px; /* Espacio limpio entre la foto y el bloque de texto */
     background: transparent;
-    padding: 40px 0;
-    margin-top: 20px;
+    padding: 10px 0;
 }
 
 .bio-imagen {
-    flex: 0 0 220px;
+    flex: 0 0 200px; /* Un tamaño de foto muy equilibrado para PC */
 }
 
 .bio-imagen img {
     width: 100%;
     height: auto;
     display: block;
-    border-radius: 0; /* Esquinas 100% afiladas */
+    border-radius: 0; /* Geometría pura */
 }
 
 .bio-texto {
     flex: 1;
 }
 
-.bio-texto h2 {
-    font-size: 0.85rem;
-    color: #888888; /* Gris muy suave */
+.bio-texto p {
     margin-top: 0;
     margin-bottom: 20px;
+    font-size: 0.95rem;
+    color: #222222;
 }
 
+/* Enlaces de Redes Sociales Estilo Texto Líquido */
 .redes-sociales {
-    clear: both;
     display: flex;
     justify-content: flex-start;
-    gap: 15px;
-    margin-top: 40px;
-    flex-wrap: wrap;
+    gap: 25px; /* Separados solo por espacio vacío */
+    margin-top: 35px;
+    border-top: 1px solid #eaeaea; /* Una línea muy fina sobre los enlaces */
+    padding-top: 20px;
+}
+
+.link-social {
+    color: #666666;
+    text-decoration: none;
+    font-size: 0.85rem;
+    font-weight: 400;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    transition: color 0.2s, border-color 0.2s;
+    border-bottom: 1px solid transparent; /* Efecto línea al pasar el ratón */
+    padding-bottom: 2px;
+}
+
+/* Paleta de colores sutiles/pastel al hacer hover según la red */
+.link-email:hover {
+    color: #e74c3c; /* Rojo pastel/suave */
+    border-color: #e74c3c;
+}
+
+.link-orcid:hover {
+    color: #a6ce39; /* El verde corporativo de ORCID */
+    border-color: #a6ce39;
+}
+
+.link-linkedin:hover {
+    color: #0077b5; /* El azul de LinkedIn */
+    border-color: #0077b5;
+}
+
+.link-scholar:hover {
+    color: #4285f4; /* El azul académico de Google */
+    border-color: #4285f4;
 }
 
 /* Botones estilo "Ghost" */
