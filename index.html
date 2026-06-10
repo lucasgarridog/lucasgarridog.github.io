@@ -1,5 +1,3 @@
----
----
 <!DOCTYPE html>
 <html lang="es">
 <head>
@@ -10,29 +8,35 @@
     
 <body>
     {% include menu.html %}    
-    <main>
     
-    <h1>Sobre mí</h1>
+    <main class="perfil-home">
     
-    <div class="home-tarjeta">
-        
-        <div class="bio-imagen">
-            <img src="/img/foto-perfil.jpeg" alt="Lucas Garrido Gómez">
+        <div class="home-cabecera">
+            <h1>Sobre mí</h1>
+            <p class="subtitulo-academico">PhD en Física | Investigador Nuclear</p>
         </div>
-        
-        <div class="bio-texto">
-            <p>Soy Doctor en Física por la Universidad de Sevilla, especializado en reacciones inducidas por núcleos con estructura de clúster.</p>
+    
+        <div class="home-tarjeta">
             
-            <div class="redes-sociales">
-                <a href="mailto:lgarrido2@us.es" class="btn-red">Email</a>
-                <a href="https://orcid.org/0000-0002-7553-490X" target="_blank" class="btn-red">ORCiD</a>
-                <a href="https://scholar.google.com/citations?user=H36KZbwAAAAJ&hl=es" target="_blank" class="btn-red">Scholar</a>
+            <div class="bio-imagen">
+                <img src="/img/foto-perfil.jpeg" alt="Lucas Garrido Gómez">
             </div>
+            
+            <div class="bio-texto">
+                <p>
+                    Soy Doctor en Física por la Universidad de Sevilla, especializado en la investigación experimental de reacciones inducidas por sistemas con estructuras de clúster. Mi trabajo se centra en descifrar los mecanismos de reacción de núcleos ligeros combinando modelos teóricos con campañas experimentales.
+                </p>
+                
+                <div class="redes-sociales">
+                    <a href="mailto:lgarrido2@us.es" class="link-social link-email">Correo</a>
+                    <a href="https://orcid.org/0000-0002-7553-490X" target="_blank" class="link-social link-orcid">ORCiD</a>
+                    <a href="https://scholar.google.com/citations?user=H36KZbwAAAAJ&hl=es" target="_blank" class="link-social link-scholar">Google Scholar</a>
+                </div>
+            </div>
+            
         </div>
-        
-    </div>
     
-</main>
+    </main>
     
 </body>
 </html>
