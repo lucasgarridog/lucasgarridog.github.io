@@ -2,6 +2,12 @@
    ESTILOS RESPONSIVOS PARA MÓVIL (max-width: 768px)
    ========================================== */
 
+/* Fuerza un margen de seguridad a los lados de toda la pantalla en móviles */
+body {
+    padding: 0 20px !important;
+    box-sizing: border-box;
+}
+
 /* --- 1. MENÚ DE NAVEGACIÓN --- */
 .menu {
     flex-direction: column; /* Apila el logo arriba y los enlaces abajo */
