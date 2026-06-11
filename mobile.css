@@ -1,10 +1,10 @@
-/* ==========================================
-   ESTILOS RESPONSIVOS PARA MÓVIL (max-width: 768px)
-   ========================================== */
+/* ==========================================================================
+   ESTILOS RESPONSIVOS PARA MÓVIL (Pantallas de menos de 768px)
+   ========================================================================== */
 
-/* Fuerza un margen de seguridad a los lados de toda la pantalla en móviles */
+/* --- 0. CONFIGURACIÓN GLOBAL DE PANTALLA --- */
 body {
-    padding: 0 20px !important;
+    padding: 0 20px !important; /* Margen de seguridad para que nada toque los bordes físicos del móvil */
     box-sizing: border-box;
 }
 
@@ -23,72 +23,130 @@ body {
     font-size: 0.9rem;
 }
 
-/* --- 2. PORTADA (HOME) --- */
+/* --- 2. PORTADA (HOME / SOBRE MÍ - Optimización Editorial) --- */
 .perfil-home {
-    margin-top: 20px;
-    padding: 0 15px;
+    margin-top: 15px;
+    padding: 0;
+}
+
+.home-cabecera {
+    text-align: center;
+    margin-bottom: 30px;
 }
 
 .home-cabecera h1 {
-    font-size: 1.8rem; /* Un poco más pequeño para que no rompa en dos líneas */
+    font-size: 1.9rem;
+    margin-bottom: 5px;
+}
+
+.subtitulo-academico {
+    font-size: 0.95rem;
+    color: #666;
 }
 
 .home-tarjeta {
-    flex-direction: column; /* La foto pasa arriba y el texto abajo */
-    align-items: center;
-    text-align: justify;
-    gap: 25px;
+    flex-direction: column; /* La foto pasa arriba y el texto abajo de forma fluida */
+    gap: 30px;
+}
+
+.bio-imagen {
+    text-align: center;
+    width: 100%;
 }
 
 .bio-imagen img {
-    width: 160px; /* Foto un poco más compacta en móvil */
-    height: 160px;
+    width: 180px; /* Formato tarjeta de autor académico */
+    height: 180px;
+    border-radius: 0; /* Mantiene la estética de líneas rectas y limpias */
 }
 
+.bio-texto {
+    width: 100%;
+}
+
+/* Separación y ritmo de lectura de los párrafos biográficos */
+.bio-texto p {
+    margin-bottom: 18px;
+    font-size: 0.95rem;
+    line-height: 1.6;
+    text-align: justify; /* Bloques de texto perfectamente cuadrados y limpios */
+}
+
+/* Enlaces profesionales/Redes Sociales: Reorganizados en cuadrícula perfecta de 2x2 */
 .redes-sociales {
-    justify-content: center; /* Centra los botones de redes en la pantalla */
-    flex-wrap: wrap; /* Si no caben en una línea, bajan elegantemente */
-    gap: 10px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Crea dos columnas exactas distribuidas al 50% */
+    gap: 12px;
+    margin-top: 30px;
+    padding-top: 20px;
+    border-top: 1px solid #eaeaea; /* Fina línea divisoria que aporta limpieza visual */
 }
 
-/* --- 3. NOTICIAS --- */
+.link-social {
+    text-align: center;
+    padding: 8px 0;
+    font-size: 0.85rem;
+    display: block;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+/* --- 3. NOTICIAS (Descomprimido y con aire editorial) --- */
 .noticia-tarjeta {
-    flex-direction: column; /* Foto de la noticia arriba, texto abajo */
-    gap: 15px;
-    padding-bottom: 30px;
+    flex-direction: column; /* Foto de la noticia arriba, contenido abajo */
+    gap: 20px; /* Espacio generoso entre la imagen y el título */
+    padding-bottom: 40px;
+    margin-top: 20px;
 }
 
 .noticia-imagen img {
-    width: 100%; /* La foto de la defensa de la tesis ocupa todo el ancho disponible */
-    max-height: 220px;
+    width: 100%;
+    max-height: 240px;
     object-fit: cover;
+    border-bottom: 1px solid #eaeaea; /* Línea sutil que enmarca la foto antes del texto */
+}
+
+.noticia-contenido h2 {
+    font-size: 1.4rem;
+    margin-bottom: 5px;
+}
+
+.noticia-fecha {
+    display: block;
+    margin-bottom: 15px; /* Separa limpiamente la fecha del cuerpo del texto */
+}
+
+/* Ritmo tipográfico y respiro de los párrafos en las noticias */
+.noticia-contenido p {
+    margin-bottom: 15px;
+    line-height: 1.5; /* Evita que los párrafos científicos se amontonen al leer con el móvil */
 }
 
 /* --- 4. CURRICULUM VITAE --- */
 .cv-container {
-    padding: 0 15px;
+    padding: 0;
     margin-top: 30px;
 }
 
 .cv-bloque {
-    flex-direction: column; /* Las fechas pasan a estar ARRIBA del cargo, no al lado */
+    flex-direction: column; /* Las fechas pasan a estar ARRIBA del cargo/entidad */
     gap: 8px;
     padding: 15px 0;
 }
 
 .cv-col-izq {
     flex: none;
-    width: 100%; /* Ocupa todo el ancho */
+    width: 100%;
     font-size: 0.8rem;
-    color: #c6914b; /* En móvil, un sutil toque de color a la fecha ayuda a separar bloques */
+    color: #c6914b; /* Matiz sutil para destacar la cronología en pantallas estrechas */
 }
 
 .cv-col-der h3 {
     font-size: 1.1rem;
 }
 
-/* Permitir que el texto fluido con span se adapte correctamente si el título es largo */
+/* Adaptación del texto fluido complementario en los títulos largos */
 .cv-col-der h3 span {
-    display: block; /* En pantallas mini, si no cabe, el contexto baja limpio */
+    display: block; /* Si el título es muy largo en móviles pequeños, la aclaración baja limpia */
     margin-top: 4px;
 }
