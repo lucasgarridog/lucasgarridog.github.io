@@ -1,0 +1,88 @@
+/* ==========================================
+   ESTILOS RESPONSIVOS PARA MÓVIL (max-width: 768px)
+   ========================================== */
+
+/* --- 1. MENÚ DE NAVEGACIÓN --- */
+.menu {
+    flex-direction: column; /* Apila el logo arriba y los enlaces abajo */
+    gap: 15px;
+    padding: 15px 20px;
+    text-align: center;
+}
+
+.menu .links {
+    width: 100%;
+    justify-content: center;
+    gap: 15px;
+    font-size: 0.9rem;
+}
+
+/* --- 2. PORTADA (HOME) --- */
+.perfil-home {
+    margin-top: 20px;
+    padding: 0 15px;
+}
+
+.home-cabecera h1 {
+    font-size: 1.8rem; /* Un poco más pequeño para que no rompa en dos líneas */
+}
+
+.home-tarjeta {
+    flex-direction: column; /* La foto pasa arriba y el texto abajo */
+    align-items: center;
+    text-align: justify;
+    gap: 25px;
+}
+
+.bio-imagen img {
+    width: 160px; /* Foto un poco más compacta en móvil */
+    height: 160px;
+}
+
+.redes-sociales {
+    justify-content: center; /* Centra los botones de redes en la pantalla */
+    flex-wrap: wrap; /* Si no caben en una línea, bajan elegantemente */
+    gap: 10px;
+}
+
+/* --- 3. NOTICIAS --- */
+.noticia-tarjeta {
+    flex-direction: column; /* Foto de la noticia arriba, texto abajo */
+    gap: 15px;
+    padding-bottom: 30px;
+}
+
+.noticia-imagen img {
+    width: 100%; /* La foto de la defensa de la tesis ocupa todo el ancho disponible */
+    max-height: 220px;
+    object-fit: cover;
+}
+
+/* --- 4. CURRICULUM VITAE --- */
+.cv-container {
+    padding: 0 15px;
+    margin-top: 30px;
+}
+
+.cv-bloque {
+    flex-direction: column; /* Las fechas pasan a estar ARRIBA del cargo, no al lado */
+    gap: 8px;
+    padding: 15px 0;
+}
+
+.cv-col-izq {
+    flex: none;
+    width: 100%; /* Ocupa todo el ancho */
+    font-size: 0.8rem;
+    color: #c6914b; /* En móvil, un sutil toque de color a la fecha ayuda a separar bloques */
+}
+
+.cv-col-der h3 {
+    font-size: 1.1rem;
+}
+
+/* Permitir que el texto fluido con span se adapte correctamente si el título es largo */
+.cv-col-der h3 span {
+    display: block; /* En pantallas mini, si no cabe, el contexto baja limpio */
+    margin-top: 4px;
+}
